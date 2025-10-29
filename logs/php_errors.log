@@ -1,0 +1,155 @@
+[09-Oct-2025 11:57:10 Europe/Paris] PHP Warning:  Undefined array key "data" in /app/api/test_dashboard_apis.php on line 113
+[09-Oct-2025 11:57:10 Europe/Paris] PHP Warning:  Trying to access array offset on null in /app/api/test_dashboard_apis.php on line 114
+[09-Oct-2025 11:57:10 Europe/Paris] PHP Warning:  Trying to access array offset on null in /app/api/test_dashboard_apis.php on line 115
+[09-Oct-2025 11:57:10 Europe/Paris] PHP Warning:  Trying to access array offset on null in /app/api/test_dashboard_apis.php on line 115
+[09-Oct-2025 11:57:10 Europe/Paris] PHP Warning:  Trying to access array offset on null in /app/api/test_dashboard_apis.php on line 123
+[09-Oct-2025 11:57:10 Europe/Paris] PHP Fatal error:  Cannot redeclare file_get_contents() in /app/api/test_dashboard_apis.php on line 129
+[09-Oct-2025 12:03:50 Europe/Paris] PHP Warning:  Undefined array key "data" in /app/api/test_dashboard_apis.php on line 113
+[09-Oct-2025 12:03:50 Europe/Paris] PHP Warning:  Trying to access array offset on null in /app/api/test_dashboard_apis.php on line 114
+[09-Oct-2025 12:03:50 Europe/Paris] PHP Warning:  Trying to access array offset on null in /app/api/test_dashboard_apis.php on line 115
+[09-Oct-2025 12:03:50 Europe/Paris] PHP Warning:  Trying to access array offset on null in /app/api/test_dashboard_apis.php on line 115
+[09-Oct-2025 12:03:50 Europe/Paris] PHP Warning:  Trying to access array offset on null in /app/api/test_dashboard_apis.php on line 123
+[09-Oct-2025 12:03:50 Europe/Paris] PHP Warning:  Undefined array key "data" in /app/api/test_dashboard_apis.php on line 138
+[09-Oct-2025 12:03:50 Europe/Paris] PHP Warning:  Trying to access array offset on null in /app/api/test_dashboard_apis.php on line 139
+[09-Oct-2025 12:03:50 Europe/Paris] PHP Warning:  Undefined array key "data" in /app/api/test_dashboard_apis.php on line 146
+[09-Oct-2025 12:03:50 Europe/Paris] PHP Warning:  Trying to access array offset on null in /app/api/test_dashboard_apis.php on line 146
+[09-Oct-2025 12:03:50 Europe/Paris] PHP Warning:  Trying to access array offset on null in /app/api/test_dashboard_apis.php on line 147
+[09-Oct-2025 12:03:50 Europe/Paris] PHP Warning:  Trying to access array offset on null in /app/api/test_dashboard_apis.php on line 148
+[09-Oct-2025 12:03:50 Europe/Paris] PHP Warning:  Trying to access array offset on null in /app/api/test_dashboard_apis.php on line 151
+[09-Oct-2025 12:03:50 Europe/Paris] Erreur API transactions: Erreur SQL : SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  invalid input syntax for type uuid: ""
+CONTEXT:  unnamed portal parameter $1 = '' | Query: SELECT * FROM transactions WHERE id = ?
+[09-Oct-2025 12:03:50 Europe/Paris] PHP Warning:  Undefined array key "data" in /app/api/test_dashboard_apis.php on line 164
+[09-Oct-2025 12:03:50 Europe/Paris] PHP Warning:  Trying to access array offset on null in /app/api/test_dashboard_apis.php on line 165
+[09-Oct-2025 12:03:50 Europe/Paris] PHP Warning:  Trying to access array offset on null in /app/api/test_dashboard_apis.php on line 176
+[09-Oct-2025 12:03:50 Europe/Paris] PHP Warning:  Trying to access array offset on null in /app/api/test_dashboard_apis.php on line 176
+[09-Oct-2025 12:03:50 Europe/Paris] PHP Warning:  Trying to access array offset on null in /app/api/test_dashboard_apis.php on line 178
+[09-Oct-2025 12:03:50 Europe/Paris] PHP Warning:  Trying to access array offset on null in /app/api/test_dashboard_apis.php on line 179
+[09-Oct-2025 12:03:50 Europe/Paris] PHP Warning:  Trying to access array offset on null in /app/api/test_dashboard_apis.php on line 182
+[09-Oct-2025 12:03:50 Europe/Paris] Erreur API transactions: Erreur SQL : SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  invalid input syntax for type uuid: ""
+CONTEXT:  unnamed portal parameter $1 = '' | Query: SELECT * FROM transactions WHERE id = ?
+[09-Oct-2025 12:03:50 Europe/Paris] PHP Warning:  Undefined array key "data" in /app/api/test_dashboard_apis.php on line 198
+[09-Oct-2025 12:03:50 Europe/Paris] PHP Warning:  Trying to access array offset on null in /app/api/test_dashboard_apis.php on line 198
+[09-Oct-2025 12:03:50 Europe/Paris] PHP Warning:  Trying to access array offset on null in /app/api/test_dashboard_apis.php on line 199
+[09-Oct-2025 12:03:50 Europe/Paris] PHP Warning:  Trying to access array offset on null in /app/api/test_dashboard_apis.php on line 199
+[09-Oct-2025 12:03:50 Europe/Paris] PHP Warning:  Trying to access array offset on null in /app/api/test_dashboard_apis.php on line 200
+[09-Oct-2025 12:07:49 Europe/Paris] PHP Warning:  Undefined array key "data" in /app/api/test_dashboard_apis.php on line 113
+[09-Oct-2025 12:07:49 Europe/Paris] PHP Warning:  Trying to access array offset on null in /app/api/test_dashboard_apis.php on line 114
+[09-Oct-2025 12:07:49 Europe/Paris] PHP Warning:  Trying to access array offset on null in /app/api/test_dashboard_apis.php on line 115
+[09-Oct-2025 12:07:49 Europe/Paris] PHP Warning:  Trying to access array offset on null in /app/api/test_dashboard_apis.php on line 115
+[09-Oct-2025 12:07:49 Europe/Paris] PHP Warning:  Trying to access array offset on null in /app/api/test_dashboard_apis.php on line 123
+[09-Oct-2025 12:07:49 Europe/Paris] PHP Warning:  Undefined array key "data" in /app/api/test_dashboard_apis.php on line 131
+[09-Oct-2025 12:07:49 Europe/Paris] PHP Warning:  Trying to access array offset on null in /app/api/test_dashboard_apis.php on line 132
+[09-Oct-2025 12:07:49 Europe/Paris] PHP Warning:  Undefined array key "data" in /app/api/test_dashboard_apis.php on line 139
+[09-Oct-2025 12:07:49 Europe/Paris] PHP Warning:  Trying to access array offset on null in /app/api/test_dashboard_apis.php on line 139
+[09-Oct-2025 12:07:49 Europe/Paris] PHP Warning:  Trying to access array offset on null in /app/api/test_dashboard_apis.php on line 140
+[09-Oct-2025 12:07:49 Europe/Paris] PHP Warning:  Trying to access array offset on null in /app/api/test_dashboard_apis.php on line 141
+[09-Oct-2025 12:07:49 Europe/Paris] PHP Warning:  Trying to access array offset on null in /app/api/test_dashboard_apis.php on line 144
+[09-Oct-2025 12:07:49 Europe/Paris] Erreur API transactions: Erreur SQL : SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  invalid input syntax for type uuid: ""
+CONTEXT:  unnamed portal parameter $1 = '' | Query: SELECT * FROM transactions WHERE id = ?
+[09-Oct-2025 12:07:49 Europe/Paris] PHP Warning:  Undefined array key "data" in /app/api/test_dashboard_apis.php on line 157
+[09-Oct-2025 12:07:49 Europe/Paris] PHP Warning:  Trying to access array offset on null in /app/api/test_dashboard_apis.php on line 158
+[09-Oct-2025 12:07:49 Europe/Paris] PHP Warning:  Trying to access array offset on null in /app/api/test_dashboard_apis.php on line 169
+[09-Oct-2025 12:07:49 Europe/Paris] PHP Warning:  Trying to access array offset on null in /app/api/test_dashboard_apis.php on line 169
+[09-Oct-2025 12:07:49 Europe/Paris] PHP Warning:  Trying to access array offset on null in /app/api/test_dashboard_apis.php on line 171
+[09-Oct-2025 12:07:49 Europe/Paris] PHP Warning:  Trying to access array offset on null in /app/api/test_dashboard_apis.php on line 172
+[09-Oct-2025 12:07:49 Europe/Paris] PHP Warning:  Trying to access array offset on null in /app/api/test_dashboard_apis.php on line 175
+[09-Oct-2025 12:07:49 Europe/Paris] Erreur API transactions: Erreur SQL : SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  invalid input syntax for type uuid: ""
+CONTEXT:  unnamed portal parameter $1 = '' | Query: SELECT * FROM transactions WHERE id = ?
+[09-Oct-2025 12:07:49 Europe/Paris] PHP Warning:  Undefined array key "data" in /app/api/test_dashboard_apis.php on line 191
+[09-Oct-2025 12:07:49 Europe/Paris] PHP Warning:  Trying to access array offset on null in /app/api/test_dashboard_apis.php on line 191
+[09-Oct-2025 12:07:49 Europe/Paris] PHP Warning:  Trying to access array offset on null in /app/api/test_dashboard_apis.php on line 192
+[09-Oct-2025 12:07:49 Europe/Paris] PHP Warning:  Trying to access array offset on null in /app/api/test_dashboard_apis.php on line 192
+[09-Oct-2025 12:07:49 Europe/Paris] PHP Warning:  Trying to access array offset on null in /app/api/test_dashboard_apis.php on line 193
+[09-Oct-2025 12:09:26 Europe/Paris] PHP Warning:  Undefined array key "data" in /app/api/test_dashboard_apis.php on line 114
+[09-Oct-2025 12:09:26 Europe/Paris] PHP Warning:  Trying to access array offset on null in /app/api/test_dashboard_apis.php on line 115
+[09-Oct-2025 12:09:26 Europe/Paris] PHP Warning:  Trying to access array offset on null in /app/api/test_dashboard_apis.php on line 116
+[09-Oct-2025 12:09:26 Europe/Paris] PHP Warning:  Trying to access array offset on null in /app/api/test_dashboard_apis.php on line 116
+[09-Oct-2025 12:09:26 Europe/Paris] PHP Warning:  Trying to access array offset on null in /app/api/test_dashboard_apis.php on line 124
+[09-Oct-2025 12:09:26 Europe/Paris] PHP Warning:  Undefined array key "data" in /app/api/test_dashboard_apis.php on line 132
+[09-Oct-2025 12:09:26 Europe/Paris] PHP Warning:  Trying to access array offset on null in /app/api/test_dashboard_apis.php on line 133
+[09-Oct-2025 12:09:26 Europe/Paris] PHP Warning:  Undefined array key "data" in /app/api/test_dashboard_apis.php on line 140
+[09-Oct-2025 12:09:26 Europe/Paris] PHP Warning:  Trying to access array offset on null in /app/api/test_dashboard_apis.php on line 140
+[09-Oct-2025 12:09:26 Europe/Paris] PHP Warning:  Trying to access array offset on null in /app/api/test_dashboard_apis.php on line 141
+[09-Oct-2025 12:09:26 Europe/Paris] PHP Warning:  Trying to access array offset on null in /app/api/test_dashboard_apis.php on line 142
+[09-Oct-2025 12:09:26 Europe/Paris] PHP Warning:  Trying to access array offset on null in /app/api/test_dashboard_apis.php on line 145
+[09-Oct-2025 12:09:26 Europe/Paris] Erreur API transactions: Erreur SQL : SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  invalid input syntax for type uuid: ""
+CONTEXT:  unnamed portal parameter $1 = '' | Query: SELECT * FROM transactions WHERE id = ?
+[09-Oct-2025 12:09:26 Europe/Paris] PHP Warning:  Undefined array key "data" in /app/api/test_dashboard_apis.php on line 158
+[09-Oct-2025 12:09:26 Europe/Paris] PHP Warning:  Trying to access array offset on null in /app/api/test_dashboard_apis.php on line 159
+[09-Oct-2025 12:09:26 Europe/Paris] PHP Warning:  Trying to access array offset on null in /app/api/test_dashboard_apis.php on line 170
+[09-Oct-2025 12:09:26 Europe/Paris] PHP Warning:  Trying to access array offset on null in /app/api/test_dashboard_apis.php on line 170
+[09-Oct-2025 12:09:26 Europe/Paris] PHP Warning:  Trying to access array offset on null in /app/api/test_dashboard_apis.php on line 172
+[09-Oct-2025 12:09:26 Europe/Paris] PHP Warning:  Trying to access array offset on null in /app/api/test_dashboard_apis.php on line 173
+[09-Oct-2025 12:09:26 Europe/Paris] PHP Warning:  Trying to access array offset on null in /app/api/test_dashboard_apis.php on line 176
+[09-Oct-2025 12:09:26 Europe/Paris] Erreur API transactions: Erreur SQL : SQLSTATE[22P02]: Invalid text representation: 7 ERROR:  invalid input syntax for type uuid: ""
+CONTEXT:  unnamed portal parameter $1 = '' | Query: SELECT * FROM transactions WHERE id = ?
+[09-Oct-2025 12:09:26 Europe/Paris] PHP Warning:  Undefined array key "data" in /app/api/test_dashboard_apis.php on line 192
+[09-Oct-2025 12:09:26 Europe/Paris] PHP Warning:  Trying to access array offset on null in /app/api/test_dashboard_apis.php on line 192
+[09-Oct-2025 12:09:26 Europe/Paris] PHP Warning:  Trying to access array offset on null in /app/api/test_dashboard_apis.php on line 193
+[09-Oct-2025 12:09:26 Europe/Paris] PHP Warning:  Trying to access array offset on null in /app/api/test_dashboard_apis.php on line 193
+[09-Oct-2025 12:09:26 Europe/Paris] PHP Warning:  Trying to access array offset on null in /app/api/test_dashboard_apis.php on line 194
+[09-Oct-2025 12:11:00 Europe/Paris] PHP Warning:  Trying to access array offset on null in /app/api/test_dashboard_apis.php on line 142
+[09-Oct-2025 12:11:00 Europe/Paris] PHP Warning:  Trying to access array offset on null in /app/api/test_dashboard_apis.php on line 142
+[09-Oct-2025 12:11:00 Europe/Paris] PHP Warning:  Trying to access array offset on null in /app/api/test_dashboard_apis.php on line 144
+[09-Oct-2025 12:11:00 Europe/Paris] PHP Warning:  Trying to access array offset on null in /app/api/test_dashboard_apis.php on line 147
+[09-Oct-2025 12:11:00 Europe/Paris] PHP Warning:  Trying to access array offset on null in /app/api/test_dashboard_apis.php on line 172
+[09-Oct-2025 12:11:00 Europe/Paris] PHP Warning:  Trying to access array offset on null in /app/api/test_dashboard_apis.php on line 172
+[09-Oct-2025 12:11:00 Europe/Paris] PHP Warning:  Trying to access array offset on null in /app/api/test_dashboard_apis.php on line 175
+[09-Oct-2025 12:11:00 Europe/Paris] PHP Warning:  Trying to access array offset on null in /app/api/test_dashboard_apis.php on line 178
+[09-Oct-2025 12:11:00 Europe/Paris] PHP Warning:  Undefined array key "data" in /app/api/test_dashboard_apis.php on line 194
+[09-Oct-2025 12:11:00 Europe/Paris] PHP Warning:  Trying to access array offset on null in /app/api/test_dashboard_apis.php on line 194
+[09-Oct-2025 12:11:00 Europe/Paris] PHP Warning:  Trying to access array offset on null in /app/api/test_dashboard_apis.php on line 195
+[09-Oct-2025 12:11:00 Europe/Paris] PHP Warning:  Trying to access array offset on null in /app/api/test_dashboard_apis.php on line 198
+[09-Oct-2025 12:14:01 Europe/Paris] PHP Warning:  Trying to access array offset on null in /app/api/test_dashboard_apis.php on line 143
+[09-Oct-2025 12:14:01 Europe/Paris] PHP Warning:  Trying to access array offset on null in /app/api/test_dashboard_apis.php on line 143
+[09-Oct-2025 12:14:01 Europe/Paris] PHP Warning:  Trying to access array offset on null in /app/api/test_dashboard_apis.php on line 145
+[09-Oct-2025 12:14:01 Europe/Paris] PHP Warning:  Trying to access array offset on null in /app/api/test_dashboard_apis.php on line 148
+[09-Oct-2025 12:14:01 Europe/Paris] PHP Warning:  Undefined array key "data" in /app/api/test_dashboard_apis.php on line 174
+[09-Oct-2025 12:14:01 Europe/Paris] PHP Warning:  Trying to access array offset on null in /app/api/test_dashboard_apis.php on line 174
+[09-Oct-2025 12:14:01 Europe/Paris] PHP Warning:  Trying to access array offset on null in /app/api/test_dashboard_apis.php on line 177
+[09-Oct-2025 12:14:01 Europe/Paris] PHP Warning:  Trying to access array offset on null in /app/api/test_dashboard_apis.php on line 180
+[09-Oct-2025 12:14:01 Europe/Paris] PHP Warning:  Undefined array key "data" in /app/api/test_dashboard_apis.php on line 197
+[09-Oct-2025 12:14:01 Europe/Paris] PHP Warning:  Trying to access array offset on null in /app/api/test_dashboard_apis.php on line 197
+[09-Oct-2025 12:14:01 Europe/Paris] PHP Warning:  Trying to access array offset on null in /app/api/test_dashboard_apis.php on line 198
+[09-Oct-2025 12:14:01 Europe/Paris] PHP Warning:  Trying to access array offset on null in /app/api/test_dashboard_apis.php on line 201
+[09-Oct-2025 12:23:44 Europe/Paris] PHP Warning:  Trying to access array offset on null in /app/api/test_dashboard_apis.php on line 143
+[09-Oct-2025 12:23:44 Europe/Paris] PHP Warning:  Trying to access array offset on null in /app/api/test_dashboard_apis.php on line 143
+[09-Oct-2025 12:23:44 Europe/Paris] PHP Warning:  Trying to access array offset on null in /app/api/test_dashboard_apis.php on line 145
+[09-Oct-2025 12:23:44 Europe/Paris] PHP Warning:  Trying to access array offset on null in /app/api/test_dashboard_apis.php on line 148
+[09-Oct-2025 12:23:44 Europe/Paris] PHP Warning:  Undefined array key "data" in /app/api/test_dashboard_apis.php on line 174
+[09-Oct-2025 12:23:44 Europe/Paris] PHP Warning:  Trying to access array offset on null in /app/api/test_dashboard_apis.php on line 174
+[09-Oct-2025 12:23:44 Europe/Paris] PHP Warning:  Trying to access array offset on null in /app/api/test_dashboard_apis.php on line 177
+[09-Oct-2025 12:23:44 Europe/Paris] PHP Warning:  Trying to access array offset on null in /app/api/test_dashboard_apis.php on line 180
+[09-Oct-2025 12:23:44 Europe/Paris] PHP Warning:  Undefined array key "data" in /app/api/test_dashboard_apis.php on line 197
+[09-Oct-2025 12:23:44 Europe/Paris] PHP Warning:  Trying to access array offset on null in /app/api/test_dashboard_apis.php on line 197
+[09-Oct-2025 12:23:44 Europe/Paris] PHP Warning:  Trying to access array offset on null in /app/api/test_dashboard_apis.php on line 198
+[09-Oct-2025 12:23:44 Europe/Paris] PHP Warning:  Trying to access array offset on null in /app/api/test_dashboard_apis.php on line 201
+[09-Oct-2025 12:28:30 Europe/Paris] PHP Warning:  Trying to access array offset on null in /app/api/test_dashboard_apis.php on line 145
+[09-Oct-2025 12:28:30 Europe/Paris] PHP Warning:  Trying to access array offset on null in /app/api/test_dashboard_apis.php on line 148
+[09-Oct-2025 12:28:30 Europe/Paris] PHP Warning:  Undefined array key "data" in /app/api/test_dashboard_apis.php on line 174
+[09-Oct-2025 12:28:30 Europe/Paris] PHP Warning:  Trying to access array offset on null in /app/api/test_dashboard_apis.php on line 174
+[09-Oct-2025 12:28:30 Europe/Paris] PHP Warning:  Trying to access array offset on null in /app/api/test_dashboard_apis.php on line 177
+[09-Oct-2025 12:28:30 Europe/Paris] PHP Warning:  Trying to access array offset on null in /app/api/test_dashboard_apis.php on line 180
+[09-Oct-2025 12:30:36 Europe/Paris] PHP Warning:  Trying to access array offset on null in /app/api/test_dashboard_apis.php on line 143
+[09-Oct-2025 12:30:36 Europe/Paris] PHP Warning:  Trying to access array offset on null in /app/api/test_dashboard_apis.php on line 146
+[09-Oct-2025 12:30:36 Europe/Paris] PHP Warning:  Undefined array key "data" in /app/api/test_dashboard_apis.php on line 172
+[09-Oct-2025 12:30:36 Europe/Paris] PHP Warning:  Trying to access array offset on null in /app/api/test_dashboard_apis.php on line 172
+[09-Oct-2025 12:30:36 Europe/Paris] PHP Warning:  Trying to access array offset on null in /app/api/test_dashboard_apis.php on line 175
+[09-Oct-2025 12:30:36 Europe/Paris] PHP Warning:  Trying to access array offset on null in /app/api/test_dashboard_apis.php on line 178
+[09-Oct-2025 12:32:15 Europe/Paris] PHP Warning:  Trying to access array offset on null in /app/api/test_dashboard_apis.php on line 143
+[09-Oct-2025 12:32:15 Europe/Paris] PHP Warning:  Trying to access array offset on null in /app/api/test_dashboard_apis.php on line 146
+[09-Oct-2025 12:32:15 Europe/Paris] PHP Warning:  Undefined variable $balanceAfterUpdate in /app/classes/Transaction.php on line 414
+[09-Oct-2025 12:32:15 Europe/Paris] PHP Warning:  Trying to access array offset on null in /app/api/test_dashboard_apis.php on line 159
+[09-Oct-2025 12:32:15 Europe/Paris] PHP Warning:  Trying to access array offset on null in /app/api/test_dashboard_apis.php on line 160
+[09-Oct-2025 12:32:15 Europe/Paris] PHP Warning:  Undefined array key "data" in /app/api/test_dashboard_apis.php on line 172
+[09-Oct-2025 12:32:15 Europe/Paris] PHP Warning:  Trying to access array offset on null in /app/api/test_dashboard_apis.php on line 172
+[09-Oct-2025 12:32:15 Europe/Paris] PHP Warning:  Trying to access array offset on null in /app/api/test_dashboard_apis.php on line 175
+[09-Oct-2025 12:32:15 Europe/Paris] PHP Warning:  Trying to access array offset on null in /app/api/test_dashboard_apis.php on line 178
+[09-Oct-2025 12:39:31 Europe/Paris] PHP Warning:  Trying to access array offset on null in /app/api/test_dashboard_apis.php on line 143
+[09-Oct-2025 12:39:31 Europe/Paris] PHP Warning:  Trying to access array offset on null in /app/api/test_dashboard_apis.php on line 146
+[09-Oct-2025 12:39:31 Europe/Paris] PHP Warning:  Undefined array key "data" in /app/api/test_dashboard_apis.php on line 159
+[09-Oct-2025 12:39:31 Europe/Paris] PHP Warning:  Trying to access array offset on null in /app/api/test_dashboard_apis.php on line 160
+[09-Oct-2025 12:39:31 Europe/Paris] PHP Warning:  Undefined array key "data" in /app/api/test_dashboard_apis.php on line 172
+[09-Oct-2025 12:39:31 Europe/Paris] PHP Warning:  Trying to access array offset on null in /app/api/test_dashboard_apis.php on line 172
+[09-Oct-2025 12:39:31 Europe/Paris] PHP Warning:  Trying to access array offset on null in /app/api/test_dashboard_apis.php on line 175
+[09-Oct-2025 12:39:31 Europe/Paris] PHP Warning:  Trying to access array offset on null in /app/api/test_dashboard_apis.php on line 178
