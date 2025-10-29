@@ -55,39 +55,51 @@ async function detectAndSetAPIPath() {
 
 // Dynamically load the organized purchases system
 function loadOrganizedPurchasesSystem() {
-    console.log('🛒 Chargement du système organisé des achats/dépenses...');
-    
-    // Load the organized purchases modules
-    const scripts = [
-        'js/purchases/purchases-navigation.js',
-        'js/purchases/purchases-modal.js', 
-        'js/purchases/purchases-data.js',
-        'js/purchases/purchases-validation.js',
-        'js/purchases/purchases-save.js',
-        'js/purchases/purchases-index.js'
-    ];
-    
-    let loadedCount = 0;
-    
-    scripts.forEach(scriptSrc => {
-        const script = document.createElement('script');
-        script.src = scriptSrc;
-        script.onload = () => {
-            loadedCount++;
-            console.log(`✅ Module chargé: ${scriptSrc}`);
-            if (loadedCount === scripts.length) {
-                console.log('🛒 Système organisé achats/dépenses complètement chargé');
-            }
-        };
-        script.onerror = () => {
-            console.warn(`⚠️ Erreur chargement: ${scriptSrc}`);
-        };
-        document.head.appendChild(script);
+    return new Promise((resolve, reject) => {
+        console.log('🛒 Chargement du système organisé des achats/dépenses...');
+
+        const scripts = [
+            'js/purchases/purchases-navigation.js',
+            'js/purchases/purchases-modal.js',
+            'js/purchases/purchases-data.js',
+            'js/purchases/purchases-validation.js',
+            'js/purchases/purchases-save.js',
+            'js/purchases/purchases-index.js'
+        ];
+
+        let loadedCount = 0;
+        let errorOccurred = false;
+
+        if (scripts.length === 0) {
+            resolve();
+            return;
+        }
+
+        scripts.forEach(scriptSrc => {
+            const script = document.createElement('script');
+            script.src = scriptSrc;
+            script.async = true;
+
+            script.onload = () => {
+                if (errorOccurred) return;
+                loadedCount++;
+                console.log(`✅ Module chargé: ${scriptSrc}`);
+                if (loadedCount === scripts.length) {
+                    console.log('🛒 Système organisé achats/dépenses complètement chargé');
+                    resolve();
+                }
+            };
+
+            script.onerror = () => {
+                if (errorOccurred) return;
+                errorOccurred = true;
+                console.error(`❌ Erreur critique lors du chargement du module: ${scriptSrc}`);
+                reject(new Error(`Impossible de charger ${scriptSrc}`));
+            };
+            document.head.appendChild(script);
+        });
     });
 }
-
-// Charger le système au chargement de la page
-document.addEventListener('DOMContentLoaded', loadOrganizedPurchasesSystem);
 
 // Variables globales
 let currentSection = 'dashboard';
@@ -116,6 +128,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Initialiser l'application
     initializeApp();
+    initializeSectionTabs();
 });
 
 async function initializeApp() {
@@ -128,6 +141,9 @@ async function initializeApp() {
         // Charger les données de base
         await loadAllData();
         
+        // Charger les systèmes modulaires
+        await loadOrganizedPurchasesSystem();
+
         // Initialiser l'interface
         updateAllDisplays();
         showSection('dashboard');
@@ -135,6 +151,9 @@ async function initializeApp() {
         showConnectionStatus('success', 'Connecté');
         console.log('Application initialisée avec succès');
         
+        // S'assurer que la section dashboard est visible
+        showSection('dashboard');
+
     } catch (error) {
         console.error('Erreur d\'initialisation:', error);
         showConnectionStatus('error', 'Erreur de connexion');
@@ -419,17 +438,6 @@ function updateCategorySelects() {
 async function updateDashboard() {
     try {
         console.log('🔄 Mise à jour du dashboard...');
-        
-        // Recharger les données de base avec timeout
-        try {
-            await Promise.race([
-                loadAllData(),
-                new Promise((_, reject) => setTimeout(() => reject(new Error('Timeout')), 10000))
-            ]);
-        } catch (error) {
-            console.warn('⚠️ Timeout ou erreur lors du chargement des données de base:', error);
-            showNotification('Chargement partiel des données', 'warning');
-        }
         
         // Charger les statistiques avec gestion d'erreur et valeurs par défaut
         let stats = { total_recettes: 0, total_depenses: 0, total_transactions: 0 };
@@ -4723,10 +4731,6 @@ window.applyCaisseHistoriqueFilters = applyCaisseHistoriqueFilters;
 window.debouncedApplyCaisseHistoriqueFilters = debouncedApplyCaisseHistoriqueFilters;
 window.updateCaisseHistoriqueDisplay = updateCaisseHistoriqueDisplay;
 
-// Initialiser les onglets au chargement du DOM
-document.addEventListener('DOMContentLoaded', function() {
-    initializeSectionTabs();
-});
 
 console.log('🎯 Fonctions onglets Banque/Caisse chargées');
 console.log('💰 Fonctions opérations de caisse chargées');
