@@ -8538,14 +8538,17 @@ async function loadCategoryData(categorieId) {
             document.getElementById('categorie-code').value = categorie.code || '';
             document.getElementById('categorie-nom').value = categorie.nom || '';
             document.getElementById('categorie-description').value = categorie.description || '';
-            document.getElementById('categorie-couleur').value = categorie.couleur || '#10B981';
+            document.getElementById('categorie-icone').value = categorie.icone || 'fas fa-tag';
+            document.getElementById('categorie-couleur').value = categorie.couleur || '#3B82F6';
+            document.getElementById('couleur-hex').value = categorie.couleur || '#3B82F6';
             document.getElementById('categorie-ordre').value = categorie.ordre_affichage || 0;
+            document.getElementById('categorie-actif').checked = categorie.actif !== false;
             
             console.log('📊 Données catégorie chargées:', categorie);
         }
     } catch (error) {
         console.error('❌ Erreur chargement catégorie:', error);
-        alert('Erreur lors du chargement de la catégorie');
+        showNotification('Erreur lors du chargement de la catégorie', 'error');
     }
 }
 
@@ -8587,6 +8590,11 @@ async function saveCategory(event) {
         actif: formData.get('actif') === 'on', // Checkbox: true si coché, false sinon
         ordre_affichage: parseInt(formData.get('ordre_affichage')) || 0
     };
+
+    const categorieId = formData.get('id');
+    if (categorieId) {
+        categorieData.id = categorieId;
+    }
     
     console.log('📦 Données à envoyer:', categorieData);
     

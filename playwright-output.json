@@ -63,8 +63,8 @@
           "column": 6,
           "specs": [
             {
-              "title": "should open, fill, save, and close the category modal",
-              "ok": true,
+              "title": "should open, fill, save, and close the category modal for a new category",
+              "ok": false,
               "tags": [],
               "tests": [
                 {
@@ -77,23 +77,101 @@
                     {
                       "workerIndex": 0,
                       "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 2524,
-                      "errors": [],
+                      "status": "timedOut",
+                      "duration": 30226,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                        },
+                        {
+                          "location": {
+                            "file": "/app/js/test_modal_categorie.spec.js",
+                            "column": 16,
+                            "line": 13
+                          },
+                          "message": "Error: page.waitForFunction: Test timeout of 30000ms exceeded.\n\n  11 |     \n  12 |     // Now that the script is injected, wait for a key function to be available\n> 13 |     await page.waitForFunction(() => typeof showSection === 'function');\n     |                ^\n  14 |\n  15 |     // Execute the UI navigation\n  16 |     await page.evaluate(() => {\n    at setupAndShowCategories (/app/js/test_modal_categorie.spec.js:13:16)\n    at /app/js/test_modal_categorie.spec.js:35:5"
+                        }
+                      ],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-29T12:03:28.344Z",
+                      "startTime": "2025-10-29T12:55:43.601Z",
                       "annotations": [],
-                      "attachments": []
+                      "attachments": [
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/app/test-results/js-test_modal_categorie-Ca-f83a4-ry-modal-for-a-new-category/error-context.md"
+                        }
+                      ]
                     }
                   ],
-                  "status": "expected"
+                  "status": "unexpected"
                 }
               ],
-              "id": "d400b4635f2538ccfe02-ef650a1e1d173a4a3142",
+              "id": "d400b4635f2538ccfe02-4a5674fb5f2bd75f8d48",
               "file": "js/test_modal_categorie.spec.js",
-              "line": 4,
+              "line": 23,
+              "column": 3
+            },
+            {
+              "title": "should load data, edit, save, and close the category modal for an existing category",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "timedOut",
+                      "duration": 30219,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                        },
+                        {
+                          "location": {
+                            "file": "/app/js/test_modal_categorie.spec.js",
+                            "column": 16,
+                            "line": 13
+                          },
+                          "message": "Error: page.waitForFunction: Test timeout of 30000ms exceeded.\n\n  11 |     \n  12 |     // Now that the script is injected, wait for a key function to be available\n> 13 |     await page.waitForFunction(() => typeof showSection === 'function');\n     |                ^\n  14 |\n  15 |     // Execute the UI navigation\n  16 |     await page.evaluate(() => {\n    at setupAndShowCategories (/app/js/test_modal_categorie.spec.js:13:16)\n    at /app/js/test_modal_categorie.spec.js:79:5"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-10-29T12:56:14.944Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/app/test-results/js-test_modal_categorie-Ca-39183-al-for-an-existing-category/error-context.md"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "d400b4635f2538ccfe02-d058c46f421ac60eaad4",
+              "file": "js/test_modal_categorie.spec.js",
+              "line": 57,
               "column": 3
             }
           ]
@@ -103,11 +181,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-10-29T12:03:26.340Z",
-    "duration": 4899.771,
-    "expected": 1,
+    "startTime": "2025-10-29T12:55:42.531Z",
+    "duration": 62822.11,
+    "expected": 0,
     "skipped": 0,
-    "unexpected": 0,
+    "unexpected": 2,
     "flaky": 0
   }
 }

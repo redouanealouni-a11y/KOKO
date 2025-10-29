@@ -1,0 +1,106 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]:
+        - heading " Caisse Régie" [level=1] [ref=e5]:
+          - generic [ref=e6]: 
+          - text: Caisse Régie
+        - paragraph [ref=e7]: Version PHP/PostgreSQL
+      - navigation [ref=e8]:
+        - link " Tableau de bord" [ref=e9] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=e10]: 
+          - text: Tableau de bord
+        - link " Transactions" [ref=e11] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=e12]: 
+          - text: Transactions
+        - link " Clients" [ref=e13] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=e14]: 
+          - text: Clients
+        - link " Fournisseurs" [ref=e15] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=e16]: 
+          - text: Fournisseurs
+        - link " Banque" [ref=e17] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=e18]: 
+          - text: Banque
+        - link " Caisse" [ref=e19] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=e20]: 
+          - text: Caisse
+        - link " Achats (Dépenses)" [ref=e21] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=e22]: 
+          - text: Achats (Dépenses)
+        - link " Rapports" [ref=e23] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=e24]: 
+          - text: Rapports
+        - link " Paramètres" [ref=e25] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=e26]: 
+          - text: Paramètres
+    - generic [ref=e27]:
+      - banner [ref=e28]:
+        - heading "Tableau de bord" [level=2] [ref=e29]
+        - generic [ref=e30]:
+          - generic [ref=e31]:
+            - generic [ref=e32]: 
+            - text: Connexion...
+          - button " Actualiser" [ref=e33] [cursor=pointer]:
+            - generic [ref=e34]: 
+            - text: Actualiser
+      - main [ref=e35]:
+        - generic [ref=e36]:
+          - generic [ref=e37]:
+            - generic [ref=e39]:
+              - generic [ref=e41]: 
+              - generic [ref=e42]:
+                - paragraph [ref=e43]: Solde Total
+                - paragraph
+                - paragraph
+            - generic [ref=e46]:
+              - generic [ref=e48]: 
+              - generic [ref=e49]:
+                - paragraph [ref=e50]: Total Recettes
+                - paragraph
+                - paragraph
+            - generic [ref=e53]:
+              - generic [ref=e55]: 
+              - generic [ref=e56]:
+                - paragraph [ref=e57]: Total Dépenses
+                - paragraph
+                - paragraph
+            - generic [ref=e60]:
+              - generic [ref=e62]: 
+              - generic [ref=e63]:
+                - paragraph [ref=e64]: Transactions
+                - paragraph
+                - paragraph
+          - generic [ref=e66]:
+            - heading "Répartition Recettes/Dépenses" [level=3] [ref=e68]
+            - heading "Répartition par Compte" [level=3] [ref=e72]
+          - generic [ref=e75]:
+            - heading "Dernières Transactions" [level=3] [ref=e76]
+            - table [ref=e78]:
+              - rowgroup [ref=e79]:
+                - row "Date Type Description Compte Tiers Montant Actions" [ref=e80]:
+                  - cell "Date" [ref=e81]
+                  - cell "Type" [ref=e82]
+                  - cell "Description" [ref=e83]
+                  - cell "Compte" [ref=e84]
+                  - cell "Tiers" [ref=e85]
+                  - cell "Montant" [ref=e86]
+                  - cell "Actions" [ref=e87]
+              - rowgroup [ref=e88]:
+                - row [ref=e89]:
+                  - cell [ref=e90]
+        - text: "+        +       +  +                       +                                     +                     #                     +                   +                +        +   +     +    "
+  - text: "       +             +            #                         +                      "
+```
