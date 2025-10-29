@@ -8568,11 +8568,11 @@ async function saveCategory(event) {
     const nom = formData.get('nom')?.trim();
     
     if (!code) {
-        alert('Le code est obligatoire');
+        showNotification('Le code est obligatoire', 'error');
         return;
     }
     if (!nom) {
-        alert('Le nom est obligatoire');
+        showNotification('Le nom est obligatoire', 'error');
         return;
     }
     
@@ -8629,7 +8629,7 @@ async function saveCategory(event) {
         
         if (result.success) {
             console.log('🎉 Insertion réussie !');
-            alert(isEdit ? 'Catégorie modifiée avec succès !' : 'Catégorie créée avec succès !');
+            showNotification(isEdit ? 'Catégorie modifiée avec succès !' : 'Catégorie créée avec succès !', 'success');
             
             // Fermer le modal
             closeCategoryModal();
@@ -8643,15 +8643,15 @@ async function saveCategory(event) {
             }
         } else {
             console.error('❌ Échec de la sauvegarde:', result.message);
-            alert('Erreur: ' + (result.message || 'Échec de la sauvegarde'));
+            showNotification('Erreur: ' + (result.message || 'Échec de la sauvegarde'), 'error');
         }
         
     } catch (error) {
         console.error('❌ Erreur complète:', error);
-        alert('Erreur lors de la sauvegarde: ' + error.message);
+        showNotification('Erreur lors de la sauvegarde: ' + error.message, 'error');
     } finally {
         // RÉACTIVER LE BOUTON
-        const submitButton = form.querySelector('button[type="submit"]');
+        const submitButton = form.querySelector('button[type="submit"]') || form.querySelector('button[onclick="submitCategoryForm()"]');
         if (submitButton) {
             submitButton.disabled = false;
             submitButton.innerHTML = '<i class="fas fa-save mr-2"></i>Enregistrer';
@@ -8669,33 +8669,6 @@ function submitCategoryForm() {
         return;
     }
     
-    // Utiliser la même logique que saveCategory mais sans event
-    const formData = new FormData(form);
-    const categorieData = {
-        code: formData.get('code')?.trim(),
-        nom: formData.get('nom')?.trim(),
-        description: formData.get('description') || '',
-        icone: formData.get('icone') || 'fas fa-tag',
-        couleur: formData.get('couleur') || '#3B82F6',
-        actif: formData.get('actif') === 'on',
-        ordre_affichage: parseInt(formData.get('ordre_affichage')) || 0
-    };
-    
-    const categorieId = formData.get('id');
-    const isEdit = categorieId && categorieId !== '';
-    
-    // Validation basique
-    if (!categorieData.code) {
-        alert('Le code est obligatoire');
-        return;
-    }
-    if (!categorieData.nom) {
-        alert('Le nom est obligatoire');
-        return;
-    }
-    
-    console.log('📋 Données validées:', categorieData);
-    
     // Créer un faux event pour réutiliser la logique de saveCategory
     const fakeEvent = {
         target: form,
@@ -8705,7 +8678,7 @@ function submitCategoryForm() {
     };
     
     // Utiliser saveCategory avec le faux event
-    return saveCategoryWithData(fakeEvent, categorieData, isEdit);
+    return saveCategory(fakeEvent);
 }
 
 // Fonction séparée pour la logique de sauvegarde avec données pre-formées
